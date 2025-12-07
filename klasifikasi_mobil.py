@@ -29,7 +29,7 @@ Aplikasi ini melakukan:
 # Load data and create Engine_Size_Category column
 @st.cache_data
 def load_data():
-    df = pd.read_excel('data\BMW-sales-data-_2010-2024_-_1_.xlsx')
+    df = pd.read_excel('data/BMW-sales-data-_2010-2024_-_1_.xlsx')
     
     # Create Engine_Size_Category for all menus
     df['Engine_Size_Category'] = pd.cut(
